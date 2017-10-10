@@ -1,0 +1,48 @@
+{
+    "token": "BOT_TOKEN_HERE",
+    "prefix": "bot ",
+    "lower_message": true,
+    "log_level": 0,
+    "invite_options": {
+        "temporary": true,
+        "maxAge": 600,
+        "maxUses": 1,
+        "unique": true,
+        "reason": "the bot's purpose is to index servers and give invites on a random basis. if you do not want this, please remove the bot from the guild."
+    },
+    "aliases": [{
+            "name": "help",
+            "aliases": ["commands", "cmds"]
+        },
+        {
+            "name": "about",
+            "aliases": ["support", "invite", "server"]
+        },
+        {
+
+            "name": "guild_random",
+            "aliases": ["random", "guild", "rg", "rd", "discord", "rs", "random_server", "whirl"]
+        },
+        {
+            "name": "stats",
+            "aliases": ["info", "amount"]
+        }
+    ],
+    "helpers": [{
+            "name": "about_command_reply",
+            "data": ""
+        },
+        {
+            "name": "help_command_reply",
+            "data": ""
+        },
+        {
+            "name": "stats_command_template",
+            "data": ""
+        },
+        {
+            "name": "guild_random_template",
+            "data": ""
+        }
+    ]
+}
