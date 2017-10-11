@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "token": "MzY3MDM1MTg5Njk3NzA4MDMy.DL7dsA.NI9I6x1Ihi7nlX-cUQii8GlxxKE",
+    "prefix": "bot ",
+    "stats_file_name": "stats.json",
+    "lower_message": true,
+    "log_level": 0,
+    "stats_update_wait": 50,
+    "member_update_wait": 50,
+    "presence_interval": 1500,
+    "environment": "development",
+    "sudoers": [""],
+    "presence_tags": ["bot help", "bot meme"],
+    "invite_options": {
+        "temporary": true,
+        "maxAge": 600,
+        "maxUses": 1,
+        "unique": true,
+        "reason": "the bot's purpose is to index servers and give invites on a random basis. if you do not want this, please remove the bot from the guild."
+    },
+    "aliases": [{
+            "name": "help",
+            "aliases": ["commands", "cmds"]
+        },
+        {
+            "name": "about",
+            "aliases": ["support", "invite", "server"]
+        },
+        {
+
+            "name": "guild_random",
+            "aliases": ["random", "guild", "rg", "rd", "discord", "rs", "random_server", "whirl"]
+        },
+        {
+            "name": "stats",
+            "aliases": ["info", "amount"]
+        }
+    ],
+    "helpers": [{
+            "name": "about_command_reply",
+            "data": ""
+        },
+        {
+            "name": "help_command_reply",
+            "data": ""
+        },
+        {
+            "name": "stats_command_template",
+            "data": ""
+        },
+        {
+            "name": "guild_random_template",
+            "data": ""
+        }
+    ]
+}

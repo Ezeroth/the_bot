@@ -1,0 +1,25 @@
+{
+  "name": "the_bot",
+  "version": "1.0.0",
+  "description": "A discord bot to get you random guilds!",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binsenpai/the_bot.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "bin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binsenpai/the_bot/issues"
+  },
+  "homepage": "https://github.com/binsenpai/the_bot#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}

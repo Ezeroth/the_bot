@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "token": "BOT_TOKEN_HERE",
+    "prefix": "tb!",
+    "stats_file_name": "stats.json",
+    "reply_in_dms": false,
+    "invite_in_dms": true,
+    "lower_message": true,
+    "log_level": 0,
+    "stats_update_wait": 50,
+    "member_update_wait": 50,
+    "presence_interval": 10,
+    "environment": "staging",
+    "sudoers": ["323759787588190222"],
+    "presence_tags": ["tb!help", "tb!stats", "tb!random", "http://bin.moe/the-invite/", "tb!about"],
+    "invite_options": {
+        "temporary": true,
+        "maxAge": 600,
+        "maxUses": 1,
+        "unique": true,
+        "reason": "the bot's purpose is to index servers and give invites on a random basis. if you do not want this, please remove the bot from the guild."
+    },
+    "aliases": [{
+            "name": "help",
+            "aliases": ["commands", "cmds"]
+        },
+        {
+            "name": "about",
+            "aliases": ["support", "invite", "server"]
+        },
+        {
+
+            "name": "guild_random",
+            "aliases": ["random", "guild", "rg", "rd", "discord", "rs", "random_server", "whirl"]
+        },
+        {
+            "name": "stats",
+            "aliases": ["info", "amount"]
+        }
+    ],
+    "helpers": [{
+            "name": "about_command_reply",
+            "data": "hi there. i'm the bot for indexing servers\ni was designed by **bin#9095**. i was made in under 48 hours and i am open source, avaliable at <https://github.com/binsenpai/the_bot/>.\ni am very efficient and help users looking for random servers.\n\nplease do not exploit me. i am not very friendly to exploiters >:(\n\nyou can join my support server here: https://discord.gg/8xrYHK7\n\n- the bot | created by bin. <https://bin.moe> | use **tb!help** -"
+        },
+        {
+            "name": "help_command_reply",
+            "data": "hi there. my commands include:\n - **tb!help** | show's this. commands of the bot.\n - **tb!about** | show's information about the bot's purpose and support server.\n - **tb!stats** | display's statistics of the bot.\n - **tb!random** | the core command. give's the invite of a random server.\n\nyou may invite me using <https://bin.moe/the-invite>\nmy commands do have aliases, you may find them on the github repository or central server.\n\n- the bot | created by bin. <https://bin.moe> | **use tb!help** -"
+        },
+        {
+            "name": "stats_command_template",
+            "data": "hi, here are my stats:\n - **$_MEMBER_COUNT_$** users.\n - **$_GUILD_COUNT_$** servers.\n - **$_COMMAND_COUNT_$** invites delivered.\n\nup for **$_UPTIME_$**\n\n- the bot | created by bin. <http://bin.moe/> | use **tb!help** -"
+        },
+        {
+            "name": "guild_random_template",
+            "data": "ok, here you go: https://discord.gg/$_INVITE_CODE_$"
+        }
+    ]
+}
